@@ -1,7 +1,10 @@
 {
-  "name": "simple-boilerplate-node",
-  "version": "0.0.0",
+  "name": "kd-init",
+  "version": "0.0.1",
   "main": "lib/index.js",
+  "bin": {
+    "kd-init": "bin/cli.js"
+  },
   "scripts": {
     "clean": "rm -rf lib",
     "test": "./node_modules/mocha/bin/_mocha --reporter spec --compilers coffee:coffee-script/register",
@@ -22,14 +25,18 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "execa": "^0.5.0",
+    "git-repo-name": "^0.6.0",
+    "inquirer": "^1.2.3"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/usirin/simple-boilerplate-node.git"
+    "url": "git+https://github.com/usirin/kd-init.git"
   },
   "bugs": {
-    "url": "https://github.com/usirin/simple-boilerplate-node/issues"
+    "url": "https://github.com/usirin/kd-init/issues"
   },
-  "homepage": "https://github.com/usirin/simple-boilerplate-node#readme",
+  "homepage": "https://github.com/usirin/kd-init#readme",
   "description": ""
 }
